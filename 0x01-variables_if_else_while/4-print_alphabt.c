@@ -3,7 +3,8 @@
 #include	<time.h>
 
 /**
- * main	-	Entry
+ * main	-	prints the alphabet in lowercase
+ * followed by a new line,	except q and e
  * Return:	Always	0	(Success)
  */
 
