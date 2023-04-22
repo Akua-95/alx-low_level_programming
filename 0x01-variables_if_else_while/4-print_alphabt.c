@@ -3,17 +3,14 @@
 #include	<time.h>
 
 /**
- * main	-	prints the alphabet in lowercase
- * followed by a new line,	except q and e
+ * main		-	prints	the	alphabet	in	lowercase
+ * followed	 by	 a	new	line,	except	q	and	e
  * Return:	Always	0	(Success)
  */
 
 int	main(void)
 {
-	char	low,	e,	q;
-
-	e	=	'e';
-	q	=	'q';
+	char	low;
 
 	for	(low	=	'a';	low	<=	'z';	low++)
 	{
@@ -21,6 +18,7 @@ int	main(void)
 			putchar(low);
 	}
 	putchar('\n');
+
 	return	(0);
 }
 
