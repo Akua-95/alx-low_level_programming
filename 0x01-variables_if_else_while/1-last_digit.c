@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
 /**
  * main	 - Entry
+ * Description "get the last digit of a nmber
  * Return: Always 0 (Success)
  */
 int main(void)
@@ -23,7 +23,7 @@ int main(void)
 	{
 		printf("Last digit of %d is %d and is 0\n", n, a);
 	}
-	else	if (a <	6 && a != 0)
+	else
 	{
 		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, a);
 	}
