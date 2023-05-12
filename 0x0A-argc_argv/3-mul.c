@@ -1,12 +1,14 @@
 #include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
- * main -  program that multiplies two numbers.
+ * main -  prints program that multiplies two numbers.
  * @argc: number of arguments
- * @argv: array of arguments
+ * @argv: array of arguments vector
  *
- * Return: 0 if is true, 1 if false
+ * Return: If program does not receive two arguments, your program
+ * should print Error, followed by a new line, and return 1
  */
 
 int main(int argc, char *argv[])
