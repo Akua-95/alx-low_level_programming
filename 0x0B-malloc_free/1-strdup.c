@@ -5,12 +5,14 @@
 /**
  * _strdup - duplicate of the string
  * @str: string to duplicate
- * Return: returns a pointer to the duplicated string.
+ * Return: returns a pointer to the duplicated string
+ *
  * It returns NULL if insufficient memory was available
  */
+
 char *_strdup(char *str)
 {
-	char *_strdup;
+	char *s;
 	int j = 0, k = 1;
 
 	if (str == NULL)
@@ -19,12 +21,16 @@ char *_strdup(char *str)
 	k = 1;
 	while (str[k])
 	k++;
-	str = malloc(sizeof(char) * (k + 1));
+	s = malloc((sizeof(char) * k) + 1);
 
-	if (str == NULL)
+	if (s == NULL)
 		return (NULL);
 
-	for (j = 0; str[j]; j++)
-	str[j] = str[j];
-	return (str);
+	while (j < k)
+	{
+		s[j] = str[j];
+		j++;
+	}
+	s[j] = '\0';
+	return (s);
 }
