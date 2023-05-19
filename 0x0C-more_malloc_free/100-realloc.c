@@ -11,16 +11,27 @@
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
+	char *a;
+	char *b;
+	unsigned int k;
+
+	if (ptr != NULL)
+		a = ptr;
+	else
+	{return (malloc(new_size)); }
+
+	if ((new_size == old_size)
+			return (ptr);
 	if (new_size == 0 && ptr != NULL)
+	free(ptr);
+	return (0);
+	b = malloc(new_size);
+	if (b == NULL)
+	return (0);
+	for (k = 0; k < (old_size || k < new_size); k++)
 	{
-	free(ptr);
-	return (NULL);
+		(b + k) = a[k];
 	}
-	if (ptr == NULL)
-		ptr = (malloc(new_size));
-	if (new_size == old_size)
-		return (ptr);
-	ptr = malloc(new_size);
 	free(ptr);
-	return (ptr);
+	return (b);
 }
