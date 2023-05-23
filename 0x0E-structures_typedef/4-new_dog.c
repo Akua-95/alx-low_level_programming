@@ -43,7 +43,6 @@ char *_strcpy(char *dest, char *src)
 		dest[a] = src[a];
 	}
 	dest[a] = '\0';
-
 	return (dest);
 }
 
@@ -80,9 +79,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(dog->name);
 		return (NULL);
 	}
-	_strcpy(dog->name, name);
-	_strcpy(dog->owner, owner);
-	dog->age = age;
+		_strcpy(dog->name, name);
+		_strcpy(dog->owner, owner);
+		dog->age = age;
 
-	return (dog);
+		return (dog);
 }
