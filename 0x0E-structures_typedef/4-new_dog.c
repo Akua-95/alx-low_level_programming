@@ -1,9 +1,9 @@
-#include "dog.h"
 #include <stdlib.h>
+#include "dog.h"
 
 /**
- * strlen - the length of a string
-* @s: string to evaluate
+ * strlen - returns the length of a string
+* @s: string
 * Return: length of the string
 */
 
@@ -23,8 +23,8 @@ int _strlen(char *s)
 
 /**
  * *_strcpy - copies string pointed to by src
- * @dest: pointer to the buffer in which we copy the string
- * @src: string to be copied
+ * @dest: pointer to the buffer
+ * @src: string
  * Return: the pointer to dest
  */
 char *_strcpy(char *dest, char *src)
@@ -48,7 +48,7 @@ char *_strcpy(char *dest, char *src)
 }
 
 /**
- * new_dog - creates new dog
+ * new_dog - function that creates new dog
  * @name: name of dog
  * @age: age of dog
  * @owner: owner of dog
@@ -61,7 +61,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	int i, j;
 
 	i = _strlen(name);
-	j  = _strlen(owner);
+	j = _strlen(owner);
 
 	dog = malloc(sizeof(dog_t));
 	if (dog == NULL)

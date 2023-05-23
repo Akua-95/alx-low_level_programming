@@ -2,22 +2,18 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * free_dog - function that frees dogs
- * @d: dog to be freed
+ * free_dog - function that frees dogs allocated memory
+ * @d: dog
  * Return: 0
  */
 
 void free_dog(dog_t *d)
 {
-	char *name;
-	float age;
-	char *owner;
-
 	if (d == NULL)
 		return;
 	{
-		free(d->name);
-		free(d->owner);
-		free(d);
+	free(d->name);
+	free(d->owner);
+	free(d);
 	}
 }
