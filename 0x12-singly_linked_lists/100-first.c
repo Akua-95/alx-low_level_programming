@@ -1,6 +1,8 @@
 #include "lists.h"
 #include <stdio.h>
 
+void first(void) __attribute__ ((constructor));
+
 /**
  * first - fuction that prints a sentence before main
  * is executed
