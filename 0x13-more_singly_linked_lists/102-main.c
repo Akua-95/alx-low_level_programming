@@ -16,7 +16,7 @@ int main(void)
 
 	head2 = NULL;
 	add_nodeint(&head2, 0);
-	add_node	int(&head2, 1);
+	add_nodeint(&head2, 1);
 	add_nodeint(&head2, 2);
 	add_nodeint(&head2, 3);
 	add_nodeint(&head2, 4);
@@ -24,7 +24,7 @@ int main(void)
 	add_nodeint(&head2, 402);
 	add_nodeint(&head2, 1024);
 	print_listint_safe(head2);
-	head = N	ULL;
+	head = NULL;
 	node = add_nodeint(&head, 0);
 	add_nodeint(&head, 1);
 	add_nodeint(&head, 2);
