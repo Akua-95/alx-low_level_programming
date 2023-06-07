@@ -18,7 +18,7 @@ listint_t *find_listint_loop(listint_t *head)
 	{
 		j = j->next->next;
 		i = i->next;
-		if (fast == i)
+		if (j == i)
 		{
 			i = head;
 			while (i != j)
@@ -32,4 +32,3 @@ listint_t *find_listint_loop(listint_t *head)
 
 	return (NULL);
 }
-
